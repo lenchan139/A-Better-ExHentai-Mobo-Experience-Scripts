@@ -23,3 +23,6 @@ COPY URL [	https://github.com/lenchan139/A-Better-ExHentai-Mobo-Experience-Scrip
 ![](screenshots/photo_2023-07-15_01-00-26.jpg)
 ![](screenshots/photo_2023-07-15_01-00-27 (2).jpg)
 ![](screenshots/photo_2023-07-15_01-00-27.jpg)
+
+## Licenses
+GPLv3
