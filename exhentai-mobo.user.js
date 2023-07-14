@@ -202,9 +202,9 @@
                 }
 
                 const v = nav.getElementsByTagName('div')
-                if(v && v.length > 0){
-                    for(const o of v){
-                        if(o && o.innerText.includes('Order')){
+                if (v && v.length > 0) {
+                    for (const o of v) {
+                        if (o && o.innerText.includes('Order')) {
                             const clonedObj = o.cloneNode(true)
                             nav.parentElement.appendChild(clonedObj)
                             o.innerHTML = ''
@@ -231,10 +231,10 @@
                         }
                     }
                 }
-                const imgs=    list.getElementsByClassName('img')
-                if(imgs && imgs.length > 0){
-                    for(const img of imgs){
-                        if(img && img.style){
+                const imgs = list.getElementsByClassName('img')
+                if (imgs && imgs.length > 0) {
+                    for (const img of imgs) {
+                        if (img && img.style) {
                             img.style.width = '100%'
                             img.style.height = 'auto'
                         }
@@ -244,11 +244,11 @@
                 if (tbody && tbody.length > 0) {
                     for (const o of tbody) {
                         const element = document.createElement('div');
-                     
+
                         element.className = 'tbody_c'
                         element.innerHTML = o.innerHTML
                         o.parentElement.replaceChild(element, o)
-                     
+
                     }
                 }
 
@@ -283,8 +283,8 @@
                     }
                 }
                 let vsc = document.querySelectorAll('.tbody_c img')
-                if(vsc && vsc.length > 0){
-                    for(const img of vsc){
+                if (vsc && vsc.length > 0) {
+                    for (const img of vsc) {
                         img.style.width = '100%'
                         img.style.height = 'auto'
                     }
@@ -376,6 +376,11 @@
     }
 
     //viewing image viewer
+    setResizeImgGalleryExHentai()
+
+})();
+
+function setResizeImgGalleryExHentai() {
     var i1 = document.getElementById('i1')
     if (i1 && i1.style) {
         i1.style.width = 'auto'
@@ -390,6 +395,19 @@
             img.style.minHeight = 'auto'
         }
     }
-
-})();
-
+    var i3 = document.getElementById('i3')
+    if (i3 && i3.style) {
+        const aList = document.querySelectorAll('#i3 a')
+        if (aList && aList.length > 0) {
+            for (const a of aList) {
+                if (a && a.getAttribute('onclick')) {
+                    const s = a.getAttribute('onclick')
+                    const yx = ';setResizeImgGalleryExHentai()'
+                    if (s && !s.includes(yx) && s.includes('load_image')) {
+                        a.setAttribute('onclick', s.split('return').join('') + yx + ';return;')
+                    }
+                }
+            }
+        }
+    }
+}
