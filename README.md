@@ -1,6 +1,11 @@
 # BeMeS: A-Better-ExHentai-Mobo-Experience-Scripts
 BeMeS is a userscript that give you a reasonable mobo experience.
-
+### TO-DO
+ - [ ] Tag Page Mobo
+ - [ ] Torrents Page Mobo
+ - [ ] Settings Page Mobo
+ - [ ] Upload Page Mobo
+ - [ ] Better UX?
 ## Pre-requirement
 ### ANdroid
 For Android User, you can install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=en&gl=US) then open kiwi browser, install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) to install userscript.
