@@ -17,11 +17,8 @@ For iphone user, please upgrade iOS 16, then your safari allow you load extendsi
 COPY URL [	https://github.com/lenchan139/A-Better-ExHentai-Mobo-Experience-Scripts/raw/master/exhentai-mobo.user.js](	https://github.com/lenchan139/A-Better-ExHentai-Mobo-Experience-Scripts/raw/master/exhentai-mobo.user.js) then add it to your userscript manager. If you use iOS UserScripts App, it recomend point to icloud folder that you can upload and sync all userscript cross devices.
 
 ## Screenshots
-![](screenshots/photo_2023-07-15_01-00-25 (2).jpg)
 ![](screenshots/photo_2023-07-15_01-00-25.jpg)
-![](screenshots/photo_2023-07-15_01-00-26 (2).jpg)
 ![](screenshots/photo_2023-07-15_01-00-26.jpg)
-![](screenshots/photo_2023-07-15_01-00-27 (2).jpg)
 ![](screenshots/photo_2023-07-15_01-00-27.jpg)
 
 ## Licenses
